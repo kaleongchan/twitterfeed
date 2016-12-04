@@ -23,9 +23,7 @@ setup vhost to point to the web root
 project_folder/web
 ```
 
-the twitter api wrapper is calling the api via SSL, you may need install the root certificate to your server https://curl.haxx.se/ca/cacert.pem
-
-edit php.ini
+the twitter api wrapper is calling the api via SSL, you may need install the root certificate to your server.  download https://curl.haxx.se/ca/cacert.pem and edit php.ini
 ```
 [curl]
 curl.cainfo = "/path/to/cacert.pem"
