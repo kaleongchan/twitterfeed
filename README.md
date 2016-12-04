@@ -23,6 +23,14 @@ setup vhost to point to the web root
 project_folder/web
 ```
 
+the twitter api wrapper is calling the api via SSL, you may need install the root certificate to your server https://curl.haxx.se/ca/cacert.pem
+
+edit php.ini
+```
+[curl]
+curl.cainfo = "/path/to/cacert.pem"
+```
+
 Configuration
 -------------
 ./config/params.php contains my test twitter app's credentials. It's ok to use it for quick testing. For anything else, please use your own.
